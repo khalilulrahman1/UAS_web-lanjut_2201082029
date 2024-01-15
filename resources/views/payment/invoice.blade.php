@@ -33,8 +33,8 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="d-flex flex-row p-2"> <img src="{{ asset('img/logo/sip.png') }}" width="48">
-                        <div class="d-flex flex-column"> <span class="font-weight-bold">Invoice</span>
-                            <small>INV-{{ $payment->id }}</small>
+                        <div class="d-flex flex-column"> <span class="font-weight-bold">Tagihan</span>
+                            <small>NO-{{ $payment->id }}</small>
                         </div>
                     </div>
                     <hr>
@@ -58,9 +58,9 @@
                             <tbody>
                                 <tr class="add">
                                     <td>Description</td>
-                                    <td class="text-center">Days</td>
-                                    <td class="text-center">Room Price / Day</td>
-                                    <td class="text-center">Total Price</td>
+                                    <td class="text-center">Hari</td>
+                                    <td class="text-center">Room Harga / Hari</td>
+                                    <td class="text-center">Total Harga</td>
                                 </tr>
                                 <tr class="content">
                                     <td>{{ $payment->transaction->room->type->name }} -
@@ -81,10 +81,9 @@
                             <tbody>
                                 <tr class="add">
                                     <td></td>
-                                    <td class="text-center">Minimum DownPayment</td>
-                                    <td class="text-center">Paid Off</td>
-                                    <td class="text-center">
-                                        insufficient payment</td>
+                                    <td class="text-center">Minimal Uang Muka</td>
+                                    <td class="text-center">Terbayarkan</td>
+                                    <td class="text-center">Belum dibayar</td>
                                 </tr>
                                 <tr class="content">
                                     <td></td>
@@ -103,14 +102,14 @@
                         <table class="table table-borderless">
                             <tbody>
                                 <tr class="add">
-                                    <td>Customer Details</td>
+                                    <td>Detail Customer</td>
                                 </tr>
                                 <tr class="content">
                                     <td>
                                         Customer ID : {{ $payment->transaction->customer->id }}
-                                        <br>Customer Name : {{ $payment->transaction->customer->name }}
-                                        <br> Customer Job : {{ $payment->transaction->customer->job }}
-                                        <br> Customer Address : {{ $payment->transaction->customer->address }}
+                                        <br>Nama : {{ $payment->transaction->customer->name }}
+                                        <br>Job : {{ $payment->transaction->customer->job }}
+                                        <br>Alamat : {{ $payment->transaction->customer->address }}
                                         <br>
                                     </td>
                                 </tr>

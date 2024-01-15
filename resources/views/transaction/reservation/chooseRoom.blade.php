@@ -23,7 +23,7 @@
             <div class="col-md-8 mt-2">
                 <div class="card shadow-sm border">
                     <div class="card-body p-3">
-                        <h2>{{ $roomsCount }} Room Available for:</h2>
+                        <h2>{{ $roomsCount }} Kamar Tersedia untuk:</h2>
                         <p>{{ request()->input('count_person') }}
                             {{ Helper::plural('People', request()->input('count_person')) }} on
                             {{ Helper::dateFormat(request()->input('check_in')) }} to
@@ -39,16 +39,16 @@
                                 <div class="col-lg-6">
                                     <select class="form-select" id="sort_name" name="sort_name"
                                         aria-label="Default select example">
-                                        <option value="Price" @if (request()->input('sort_name') == 'Price') selected @endif>Price</option>
+                                        <option value="Price" @if (request()->input('sort_name') == 'Price') selected @endif>Harga</option>
                                         <option value="Number" @if (request()->input('sort_name') == 'Number') selected @endif>Number</option>
-                                        <option value="Capacity" @if (request()->input('sort_name') == 'Capacity') selected @endif>Capacity</option>
+                                        <option value="Capacity" @if (request()->input('sort_name') == 'Capacity') selected @endif>Kapasitas</option>
                                     </select>
                                 </div>
                                 <div class="col-lg-4">
                                     <select class="form-select" id="sort_type" name="sort_type"
                                         aria-label="Default select example">
-                                        <option value="ASC" @if (request()->input('sort_type') == 'ASC') selected @endif>Ascending</option>
-                                        <option value="DESC" @if (request()->input('sort_type') == 'DESC') selected @endif>Descending</option>
+                                        <option value="ASC" @if (request()->input('sort_type') == 'ASC') selected @endif>Naik</option>
+                                        <option value="DESC" @if (request()->input('sort_type') == 'DESC') selected @endif>Menurun</option>
                                     </select>
                                 </div>
                                 <div class="col-lg-2">

@@ -17,7 +17,7 @@
                                 <span
                                     class="position-absolute mt-1 top-0 start-100 translate-middle badge rounded-pill bg-secondary">
                                     {{ auth()->user()->unreadNotifications->count() }}
-                                    <span class="visually-hidden">unread messages</span>
+                                    <span class="visually-hidden">pesan yang belum dibaca</span>
                                 </span>
                             @endif
                         </i>
@@ -27,7 +27,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <li role="presentation">
-                                <div class="dropdown-header">Notifications</div>
+                                <div class="dropdown-header">Notifikasi</div>
                             </li>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
                                     </li>
                                 @empty
                                     <p class="text-center">
-                                        There's no new notification
+                                        Tidak ada notifikasi baru
                                     </p>
                                 @endforelse
                             </ul>
@@ -63,9 +63,8 @@
                                 <div class="row">
                                     <div class="col-lg-12 text-center">
                                         <a href="{{ route('notification.markAllAsRead') }}"
-                                            class="float-start mb-2 ms-2">Mark all as read</a>
-                                        <a href="{{ route('notification.index') }}" class="float-end mb-2 me-2">See
-                                            All</a>
+                                            class="float-start mb-2 ms-2">Tandai semua telah dibaca</a>
+                                        <a href="{{ route('notification.index') }}" class="float-end mb-2 me-2">Lihat semua</a>
                                     </div>
                                 </div>
                             </li>
@@ -83,8 +82,8 @@
                     <li><a class="dropdown-item"
                             href="{{ route('user.show', ['user' => auth()->user()->id]) }}">Profil</a>
                     </li>
-                    <li><a class="dropdown-item" href="#">Activity</a></li>
-                    <li><a class="dropdown-item" href="#">Setting</a></li>
+                    <li><a class="dropdown-item" href="#">Aktivitas</a></li>
+                    <li><a class="dropdown-item" href="#">Pengaturan</a></li>
                     <li>
                         <hr class="dropdown-divider">
                     </li>

@@ -28,13 +28,13 @@
         <div id="error_number" class="text-danger error"></div>
     </div>
     <div class="col-md-12">
-        <label for="capacity" class="form-label">Capacity</label>
+        <label for="capacity" class="form-label">Kapasitas</label>
         <input room="text" class="form-control @error('capacity') is-invalid @enderror" id="capacity"
             name="capacity" value="{{ $room->capacity }}" placeholder="ex: 4">
         <div id="error_capacity" class="text-danger error"></div>
     </div>
     <div class="col-md-12">
-        <label for="price" class="form-label">Price</label>
+        <label for="price" class="form-label">Harga</label>
         <input room="text" class="form-control @error('price') is-invalid @enderror" id="price" name="price"
             value="{{ $room->price }}" placeholder="ex: 500000">
         <div id="error_price" class="text-danger error"></div>

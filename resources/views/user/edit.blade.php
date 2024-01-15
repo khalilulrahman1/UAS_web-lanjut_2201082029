@@ -21,7 +21,7 @@
                         @method('PUT')
                         @csrf
                         <div class="col-md-12">
-                            <label for="name" class="form-label">Name</label>
+                            <label for="name" class="form-label">Nama</label>
                             <input type="text" class="form-control @error('name') is-invalid @enderror" id="name"
                                 name="name" value="{{ $user->name }}">
                             @error('name')

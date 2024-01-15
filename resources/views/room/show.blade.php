@@ -70,7 +70,7 @@
             @else
             <div class="card">
                 <div class="card-body">
-                    <h4>Currently Empty</h4>
+                    <h4>Saat ini Kosong</h4>
                 </div>
             </div>
             @endif
@@ -96,7 +96,7 @@
                                     <div class="row">
                                         <div class="col-lg-6">
                                             <p>
-                                                Capacity: {{ $room->capacity }}
+                                                Kapasitas: {{ $room->capacity }}
                                             </p>
                                         </div>
                                     </div>
@@ -134,7 +134,7 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-body">
-                            <h4>Theres no image for this room</h4>
+                            <h4>Tidak ada gambar untuk ruangan ini</h4>
                         </div>
                     </div>
                 </div>

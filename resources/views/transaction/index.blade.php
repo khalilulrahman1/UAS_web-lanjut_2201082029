@@ -27,7 +27,7 @@
     </div>
     <div class="row my-2 mt-4 ms-1">
         <div class="col-lg-12">
-            <h5>Active Guests: </h5>
+            <h5>Tamu Aktif : </h5>
         </div>
     </div>
     <div class="row">
@@ -44,10 +44,10 @@
                                     <th>Room</th>
                                     <th>Check In</th>
                                     <th>Check Out</th>
-                                    <th>Days</th>
-                                    <th>Total Price</th>
-                                    <th>Paid Off</th>
-                                    <th>Debt</th>
+                                    <th>Hari</th>
+                                    <th>Total Harga</th>
+                                    <th>Terbayarkan</th>
+                                    <th>Belum Dibayar</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -81,7 +81,7 @@
                                 @empty
                                     <tr>
                                         <td colspan="15" class="text-center">
-                                            There's no data in this table
+                                            Tidak ada data dalam tabel ini
                                         </td>
                                     </tr>
                                 @endforelse
@@ -112,10 +112,10 @@
                                     <th>Room</th>
                                     <th>Check In</th>
                                     <th>Check Out</th>
-                                    <th>Days</th>
-                                    <th>Total Price</th>
-                                    <th>Paid Off</th>
-                                    <th>Debt</th>
+                                    <th>Hari</th>
+                                    <th>Total Harga</th>
+                                    <th>Terbayarkan</th>
+                                    <th>Belum Dibayar</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -149,7 +149,7 @@
                             @empty
                                 <tr>
                                     <td colspan="15" class="text-center">
-                                        There's no data in this table
+                                        Tidak ada data dalam tabel ini
                                     </td>
                                 </tr>
                             @endforelse
@@ -170,17 +170,17 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Have any account?</h5>
+                    <h5 class="modal-title" id="staticBackdropLabel">Punya akun?</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="d-flex justify-content-center">
                         <a class="btn btn-sm btn-primary m-1"
-                            href="{{ route('transaction.reservation.createIdentity') }}">No, create
-                            new account!</a>
+                            href="{{ route('transaction.reservation.createIdentity') }}">Tidak, buat
+                            akun baru!</a>
                         <a class="btn btn-sm btn-success m-1"
-                            href="{{ route('transaction.reservation.pickFromCustomer') }}">Yes, use
-                            their account!</a>
+                            href="{{ route('transaction.reservation.pickFromCustomer') }}">Ya, gunakan
+                            akun mereka!</a>
                     </div>
                 </div>
                 <div class="modal-footer">

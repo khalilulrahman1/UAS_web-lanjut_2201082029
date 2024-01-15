@@ -8,7 +8,7 @@
                     <div class="col-lg-6">
                         <div class="card shadow-sm border" style="border-radius: 0.5rem">
                             <div class="card-body">
-                                <h5>{{ count($transactions) }} Guests this day</h5>
+                                <h5>{{ count($transactions) }} Tamu hari ini</h5>
                             </div>
                         </div>
                     </div>
@@ -28,7 +28,7 @@
                             <div class="card-header">
                                 <div class="row ">
                                     <div class="col-lg-12 d-flex justify-content-between">
-                                        <h3>Today Guests</h3>
+                                        <h3>Tamu hari ini</h3>
                                         <div>
                                             <a href="#" class="btn btn-tool btn-sm">
                                                 <i class="fas fa-download"></i>
@@ -45,11 +45,11 @@
                                     <thead>
                                         <tr>
                                             <th></th>
-                                            <th>Name</th>
+                                            <th>Nama</th>
                                             <th>Room</th>
-                                            <th class="text-center">Stay</th>
-                                            <th>Day Left</th>
-                                            <th>Debt</th>
+                                            <th class="text-center">Tanggal</th>
+                                            <th>Hari Tersisa</th>
+                                            <th>Belum Dibayar</th>
                                             <th class="text-center">Status</th>
                                         </tr>
                                     </thead>
@@ -88,7 +88,7 @@
                                                     </span>
                                                     @if (Helper::getDateDifference(now(), $transaction->check_out) < 1)
                                                         <span class="justify-content-center badge bg-danger">
-                                                            must finish payment
+                                                            Harus menyelesaikan pembayaran
                                                         </span>
                                                     @endif
                                                 </td>
@@ -96,7 +96,7 @@
                                         @empty
                                             <tr>
                                                 <td colspan="10" class="text-center">
-                                                    There's no data in this table
+                                                    Tidak ada data dalam tabel ini
                                                 </td>
                                             </tr>
                                         @endforelse
@@ -126,7 +126,7 @@
                         <div class="card shadow-sm border">
                             <div class="card-header border-0">
                                 <div class="d-flex justify-content-between">
-                                    <h3 class="card-title">Monthly Guests Chart</h3>
+                                    <h3 class="card-title">Bagan Tamu Bulanan</h3>
                                 </div>
                             </div>
                             <div class="card-body">
@@ -152,7 +152,7 @@
                                         <i class="fas fa-square text-primary"></i> {{ Helper::thisMonth() }}
                                     </span>
                                     <span>
-                                        <i class="fas fa-square text-gray"></i> Last month
+                                        <i class="fas fa-square text-gray"></i> Bulan lalu
                                     </span>
                                 </div>
                             </div>

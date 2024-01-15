@@ -1,7 +1,7 @@
 @extends('template.master')
 @section('title', 'Payment')
 @section('content')
-
+o
     <div class="card shadow-sm border">
         <div class="card-body">
             <table class="table table-hover">
@@ -30,7 +30,7 @@
                         </tr>
                     @empty
                         <tr class="text-center">
-                            <td colspan="6">Theres no payment found on database</td>
+                            <td colspan="6">Tidak ada pembayaran yang ditemukan di database</td>
                         </tr>
                     @endforelse
                 </tbody>

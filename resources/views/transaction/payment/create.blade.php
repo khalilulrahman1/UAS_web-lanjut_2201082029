@@ -34,7 +34,7 @@
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label class="col-sm-2 col-form-label">Days Count</label>
+                            <label class="col-sm-2 col-form-label">Hitungan Hari</label>
                             <div class="col-sm-10">
                                 <input type="text" class="form-control"
                                     value="{{ $transaction->getDateDifferenceWithPlural($transaction->check_in, $transaction->check_out) }}"
@@ -42,7 +42,7 @@
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label class="col-sm-2 col-form-label">Total Price</label>
+                            <label class="col-sm-2 col-form-label">Total harga</label>
                             <div class="col-sm-10">
                                 <input type="text" class="form-control"
                                     value="{{ Helper::convertToRupiah($transaction->getTotalPrice($transaction->room->price, $transaction->check_in, $transaction->check_out)) }}"
@@ -50,7 +50,7 @@
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label class="col-sm-2 col-form-label">Paid Off</label>
+                            <label class="col-sm-2 col-form-label">Terbayarkan</label>
                             <div class="col-sm-10">
                                 <input type="text" class="form-control"
                                     value="{{ Helper::convertToRupiah($transaction->getTotalPayment()) }}" readonly>

@@ -36,9 +36,9 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">#</th>
-                                            <th scope="col">Name</th>
+                                            <th scope="col">Nama</th>
                                             <th scope="col">Code</th>
-                                            <th scope="col">Information</th>
+                                            <th scope="col">Informasi</th>
                                             <th scope="col">Action</th>
                                         </tr>
                                     </thead>

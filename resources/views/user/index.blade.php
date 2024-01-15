@@ -35,7 +35,7 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">#</th>
-                                            <th scope="col">Name</th>
+                                            <th scope="col">Nama</th>
                                             <th scope="col">Email</th>
                                             <th scope="col">Role</th>
                                             <th scope="col">Action</th>
@@ -93,7 +93,7 @@
                                         @empty
                                             <tr>
                                                 <td colspan="10" class="text-center">
-                                                    There's no data in this table
+                                                    Tidak ada data dalam tabel ini
                                                 </td>
                                             </tr>
                                         @endforelse
@@ -138,7 +138,7 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">#</th>
-                                            <th scope="col">Name</th>
+                                            <th scope="col">Nama</th>
                                             <th scope="col">Email</th>
                                             <th scope="col">Role</th>
                                             <th scope="col">Action</th>
@@ -196,7 +196,7 @@
                                         @empty
                                             <tr>
                                                 <td colspan="10" class="text-center">
-                                                    There's no data in this table
+                                                    Tidak ada data dalam tabel ini
                                                 </td>
                                             </tr>
                                         @endforelse
